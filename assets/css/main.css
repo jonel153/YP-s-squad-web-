@@ -1,0 +1,265 @@
+html, body{
+  height: 100%;
+  width: 100%;
+	padding-top: 30px;
+  margin: 0;
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
+
+.divider{
+	width: inherit;
+    height: 1px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+.view-colors{
+	background-color: #EEEEEE;
+}
+.footer-row{
+	position: relative;
+	min-height: 100%;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.navi-color{
+	background-color: #000;
+
+}
+.line-separator{
+	width: inherit;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+.line-separator-2{
+    width: 3px;
+    height: 250px;
+    background: linear-gradient(#EEEEEE,#000000,#EEEEEE);
+    border-radius: 10px;
+}
+.line-separator-3{
+	width: inherit;
+    height: 2px;
+    background-color: black;
+    border-radius: 5px;
+}
+.square-tiles{
+	object-fit: cover;
+	width: 250px;
+	height: 250px;
+}
+.square-tiles-2{
+	object-fit: cover;
+	width: 175px;
+	height: 175px;
+}
+.prod-dd{
+	width: auto;
+	background-color: #000;
+}
+.ab{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.aa:hover{
+	border: 3px solid #000;
+	transition: all .2s ease-in-out;
+}
+.ac:hover{
+	box-shadow: 5px 5px 2px #888888;
+	transition: all .2s ease-in-out;
+}
+
+.cart-num{
+	font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+}
+
+.btn-link-unused{
+  border:none;
+  outline:none;
+  background:none;
+  cursor:pointer;
+  color:#0000EE;
+  padding:0;
+  text-decoration:underline;
+  font-family:inherit;
+  font-size:inherit;
+}
+
+/*
+.visible {
+  visibility: visible;
+  display: inline;
+}
+.invisible {
+  visibility: hidden;
+  display: none;
+}
+*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+    transition: all .10s linear;
+}
+
+
+input[type="button"] {
+    transition: all .3s;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/*input[type="button"]:not(.active) {
+    background-color:transparent;
+}
+
+.active {
+    background-color: #007bff;
+    color :#fff;
+}
+
+/*input[type="button"]:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/**DATATABLES OVERRIDE CSS
+div#tablesBranches_wrapper.dataTables_wrapper.form-inline.dt-bootstrap.no-footer > div.row{
+    width: 100%;
+}**/
+
+
+
+
+
+/*************ADMIN****************/
+.admin-sidenav{
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position:fixed;
+  display: block;
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+/*************COLORS NI MATTHEW****************/
+.bg-grey{
+  background-color: #9E9E9E !important;
+}
+
+.bg-grey-light{
+  background-color: #E0E0E0 !important;
+}
+
+.bg-grey-dark{
+  background-color: #212121 !important;
+}
+
+.bg-grey-50{
+  background-color: #FAFAFA !important;
+}
+/*************CUSTOM SCROLLBAR**************/
+#customScrollbar::-webkit-scrollbar-track
+{
+  /**-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);**/
+  background-color: #FFFFFF;
+}
+
+#customScrollbar::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: #E0E0E0;
+}
+
+#customScrollbar::-webkit-scrollbar-thumb
+{
+  background-color: #9E9E9E;
+  border: 1px solid #212121;
+}
+
+.card-highlight:hover{
+  background: #E0E0E0;
+  color: #212121;
+  -webkit-transition: all .15s linear; 
+     -moz-transition: all .15s linear; 
+      -ms-transition: all .15s linear; 
+       -o-transition: all .15s linear;
+          transition: all .15s linear;
+}
+
+#dataTableHeightCustom{
+  height: 100%;
+}
+
+#fab-add{
+  position: fixed;
+  top:86%;
+  left:92%;
+}
+
+#outer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #BADA55;
+}
+
+#inner{
+    background-color: #f3f3f3;
+    color: #663399;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 300px;    
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;top: 50%;
+}
